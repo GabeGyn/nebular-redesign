@@ -1,0 +1,41 @@
+.title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.font-1 {
+    font-family: 'HeadingNowTrial-57Extrabold';
+    font-size: 30px;
+    color: #E15729;
+}
+
+.font-2 {
+    font-family: 'Schwarzenberg-Regular';
+    font-size: 55px;
+    color: #E15729;
+}
+
+:host ::ng-deep nb-layout-header {
+    background-color: transparent;
+    nav {
+        box-shadow: none;
+    }
+}
+
+:host ::ng-deep nb-sidebar {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+:host nb-layout-header nb-user:last-child {
+    margin-left: auto;
+}
+
+.label{
+    color: var(--text-hint-color);
+    font-family: var(--text-label-font-family);
+    font-size: var(--text-label-font-size);
+    font-weight: var(--text-label-font-weight);
+    line-height: var(--text-label-line-height);
+}

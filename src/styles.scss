@@ -3,6 +3,16 @@
 @use '@nebular/theme/styles/globals' as *;
 
 @include nb-install() {
-  @include nb-theme-global();
+@include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'HeadingNowTrial-57Extrabold';
+  src: URL('./assets/font/HeadingNowTrial-57Extrabold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Schwarzenberg-Regular';
+  src: URL('./assets/font/Schwarzenberg.ttf') format('truetype');
+}
