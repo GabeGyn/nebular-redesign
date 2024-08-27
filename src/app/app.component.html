@@ -1,5 +1,8 @@
 <nb-layout>
   <nb-layout-header class="background" fixed>
+    
+    <a href="#" (click)="toggle()"> <nb-icon class="icon-container" icon="menu-2-outline"></nb-icon> </a>
+    
     <h6 class="title">
       <div class="font-1">SUPERBOX</div>
       <span class="label">Sistema de Gestão ERP</span>
@@ -9,14 +12,26 @@
       shape="rectangle"    
       id="user"
       name="SuperBox"
+      [nbContextMenu]="menu"
+      nbContextMenuTag="my-context-menu"
       title="full-stack manager"
       style="justify-content: end">
     </nb-user>
   </nb-layout-header>
 
-  <nb-sidebar class="background">Sidebar Content</nb-sidebar>
+  <nb-sidebar class="background">
+    <nb-menu 
+      tag="menu" 
+      [items]="items" 
+      autoCollapse="true">
+    </nb-menu>
+  </nb-sidebar>
   
   <nb-layout-column>
-    Page Content <button nbButton status="primary">Hello World</button>
+    <nb-card>
+      <nb-card-body>
+        
+      </nb-card-body>
+    </nb-card>
   </nb-layout-column>
 </nb-layout>
